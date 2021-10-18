@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/xiaopizhu/Desktop/CPP/loop_learn.cpp
+loop_learn.h
+/Users/xiaopizhu/Desktop/CPP/loop_learn.h
+iostream
+-
+
+/Users/xiaopizhu/Desktop/CPP/loop_learn.h
+
