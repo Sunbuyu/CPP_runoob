@@ -129,6 +129,30 @@ CPP/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/build
 .PHONY : CPP/fast
 
+class_learn.o: class_learn.cpp.o
+.PHONY : class_learn.o
+
+# target to build an object file
+class_learn.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/class_learn.cpp.o
+.PHONY : class_learn.cpp.o
+
+class_learn.i: class_learn.cpp.i
+.PHONY : class_learn.i
+
+# target to preprocess a source file
+class_learn.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/class_learn.cpp.i
+.PHONY : class_learn.cpp.i
+
+class_learn.s: class_learn.cpp.s
+.PHONY : class_learn.s
+
+# target to generate assembly for a file
+class_learn.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CPP.dir/build.make CMakeFiles/CPP.dir/class_learn.cpp.s
+.PHONY : class_learn.cpp.s
+
 extern_learn.o: extern_learn.cpp.o
 .PHONY : extern_learn.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... CPP"
+	@echo "... class_learn.o"
+	@echo "... class_learn.i"
+	@echo "... class_learn.s"
 	@echo "... extern_learn.o"
 	@echo "... extern_learn.i"
 	@echo "... extern_learn.s"

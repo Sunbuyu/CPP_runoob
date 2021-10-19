@@ -78,6 +78,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/xiaopizhu/Desktop/CPP/class_learn.cpp">
+			<Option target="CPP"/>
+		</Unit>
+		<Unit filename="/Users/xiaopizhu/Desktop/CPP/class_learn.h">
+			<Option target="CPP"/>
+		</Unit>
 		<Unit filename="/Users/xiaopizhu/Desktop/CPP/extern_learn.cpp">
 			<Option target="CPP"/>
 		</Unit>

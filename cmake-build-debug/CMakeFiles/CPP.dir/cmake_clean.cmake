@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CPP.dir/class_learn.cpp.o"
   "CMakeFiles/CPP.dir/extern_learn.cpp.o"
   "CMakeFiles/CPP.dir/header_learn.cpp.o"
   "CMakeFiles/CPP.dir/loop_learn.cpp.o"
