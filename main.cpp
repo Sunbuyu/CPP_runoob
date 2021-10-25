@@ -4,6 +4,7 @@
 #include "loop_learn.h"
 #include "class_learn.h"
 #include "reference_learn.h"
+#include "auto_learn.h"
 
 extern void write();  //行后的注释要空两格
 
@@ -21,10 +22,16 @@ int main() {
 //    std::cout << "正方体的体积是：" << my_box.GetVolume() << std::endl;
 
     //测试引用
-    int var{1};
-    ReferenceLearn reference_learn;
-    reference_learn.SetMyNumber(var);
-    reference_learn.GetMyNumber();
+//    int var{1};
+//    ReferenceLearn reference_learn;
+//    reference_learn.SetMyNumber(var);
+//    reference_learn.GetMyNumber();
+
+    //测试auto
+    auto number_1 {1};
+    auto number_2 {2};
+    std::cout << "the bigger number is: " <<  Max(number_1,number_2)  <<  std::endl;
+    LearnAuto();
 
 
 
