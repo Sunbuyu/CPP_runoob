@@ -5,6 +5,8 @@
 #include "class_learn.h"
 #include "reference_learn.h"
 #include "auto_learn.h"
+#include "ptr_learn.h"
+#include "for_range_loop.h"
 
 extern void write();  //行后的注释要空两格
 
@@ -27,13 +29,17 @@ int main() {
 //    reference_learn.SetMyNumber(var);
 //    reference_learn.GetMyNumber();
 
-    //测试auto
-    auto number_1 {1};
-    auto number_2 {2};
-    std::cout << "the bigger number is: " <<  Max(number_1,number_2)  <<  std::endl;
-    LearnAuto();
+//    //测试auto
+//    auto number_1 {1};
+//    auto number_2 {2};
+//    std::cout << "the bigger number is: " <<  Max(number_1,number_2)  <<  std::endl;
+//    LearnAuto();
 
+//    //测试常量和指针
+//    LearnPtr();
 
+    //测试for的范围循环
+    LearnForRangeLoop();
 
     return 0;
 }
