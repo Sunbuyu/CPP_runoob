@@ -4,7 +4,8 @@
 
 #ifndef MAIN_CPP_CLASS_LEARN_H
 #define MAIN_CPP_CLASS_LEARN_H
-
+#include <string>
+using std::string;
 //类的分文件编写是这样的：class的主体部分全部放在头文件里面；
 //主体包括成员变量和成员函数的声明
 //成员函数的实现放在对应的cpp文件里面

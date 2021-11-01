@@ -1,4 +1,6 @@
 #include <iostream>
+using std::cout;
+using std::endl;
 #include "header_learn.h"
 #include "tuple_learn.h"
 #include "loop_learn.h"
@@ -7,6 +9,7 @@
 #include "auto_learn.h"
 #include "ptr_learn.h"
 #include "for_range_loop.h"
+#include "class.h"
 
 extern void write();  //行后的注释要空两格
 
@@ -38,8 +41,22 @@ int main() {
 //    //测试常量和指针
 //    LearnPtr();
 
-    //测试for的范围循环
-    LearnForRangeLoop();
+
+    //测试class的三个构造函数
+    Account account_1(222.2);  //普通有参构造函数
+    cout << "普通有参构造后的值：" << account_1.CheckBalance() << endl; //查看属性
+    //测试一下匿名对象，匿名对象就是就用一次，用完就销毁,请着重记忆这里的用法，到时候别不会了
+    std::cout << "test anonymous object" << Account(33.2).CheckBalance() << std::endl;
+    //创建临时匿名对象进行赋值,这同时也是一个拷贝构造调用
+    Account account_3 {Account(55.3)};
+    std::cout << account_3.CheckBalance() << endl;  //初始化完了，查一下余额
+    std::cout << account_3.Deposit(66.6) << std::endl;  //存钱
+    std::cout << account_3.CheckBalance() << std::endl;
+    std::cout << account_3.Withdraw(33.3) << std::endl;  //withdraw
+    std::cout << account_3.Withdraw(100) << std::endl;  //withdraw
+
+
+
 
     return 0;
-}
+};
